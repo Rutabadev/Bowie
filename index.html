@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>David Bowie Expo</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" >
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <style>
+            canvas {border-style:solid;}
+            html, body{
+                height: 100%;
+                margin:0;
+            }
+
+            #img_expo { transition: all 0.5s; }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+
+        <div id="kinetic" style="width: 100%;height: 100%;overflow: hidden;margin: 0;"></div>
+
+        <img src="images/expo.jpg" id="img_expo" alt="test" width="500" height="500" style="position:absolute;border:0!important;" data-polyclip="487, 4, 500, 239, 19, 239, 43, 195">
+        <div id="pied" style="position:absolute; bottom: 0; height: 50px; width: 100%; background-color:black; color:white;line-height: 50px;">
+            <p id="menu" cache="O" style="text-align:right; margin-right: 20px;"><span class="glyphicon glyphicon-th-list"></span></p>
+        </div>
+        <div id="affich_menu" class="col-xs-10" style="display:none;background-color: rgb(50,50,50);opacity:0.5;position: absolute;width:100%;height:350px;top:20%;">
+            <div class="col-xs-3 col-xs-offset-1" style="background-color: black;opacity:1;padding: 20px;margin-top:auto;">
+                <h1>Hello</h1>
+                <img src="images/expo.jpg" alt="expo" style="width:100%;">
+            </div>
+            <div class="col-xs-3 col-xs-offset-1" style="background-color: black;opacity:1;padding: 20px;">
+                <h1>Hello</h1>
+                <img src="images/expo.jpg" alt="expo" style="width:100%;">
+            </div>
+            <div class="col-xs-3 col-xs-offset-1" style="background-color: black;opacity:1;padding: 20px;">
+                <h1>Hello</h1>
+                <img src="images/expo.jpg" alt="expo" style="width:100%;">
+            </div>
+        </div>
+
+
+        <script src="js/kinetic.min.js"></script>
+        <script src="lib/bootstrap/js/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/polyclip/jquery.polyclip.js"></script>
+        <script src="js/polyclip-p.js"></script>
+        <script src="js/excanvas.compiled.js"></script>
+
+        <script>
+            window.onload = function() {
+                var scene = new Kinetic.Stage({
+                    container: "kinetic",
+                    width: 10000,
+                    height: 10000
+                });
+
+                var calque = new Kinetic.Layer();
+
+                var rectangle = new Kinetic.Rect({
+                    width: 10000,
+                    height: 10000,
+                    fill: "rgb(20,20,20)"
+                });
+
+                calque.add(rectangle);
+
+                var ligne = new Kinetic.Line({
+                    points: [0,50,250,120,550,250,1000,220, 4000,500],
+                    stroke: "rgb(50,50,50)",
+                    strokeWidth: 1,
+                });
+                calque.add(ligne);
+                var ligne = new Kinetic.Line({
+                    points: [0,650,300,500,550,250,700,150, 1200,0],
+                    stroke: "rgb(50,50,50)",
+                    strokeWidth: 1,
+                });
+                calque.add(ligne);
+                var ligne = new Kinetic.Line({
+                    points: [200,0,300,50,500,350,750,450,1000,650,1350,1000],
+                    stroke: "rgb(50,50,50)",
+                    strokeWidth: 1,
+                });
+                calque.add(ligne);
+                var ligne = new Kinetic.Line({
+                    points: [200,1200,500,500,900,400,900,200,1100,0],
+                    stroke: "rgb(50,50,50)",
+                    strokeWidth: 1,
+                });
+                calque.add(ligne);
+                var ligne = new Kinetic.Line({
+                    points: [0,300,300,500,500,500,800,700,3000,450],
+                    stroke: "rgb(50,50,50)",
+                    strokeWidth: 1,
+                });
+                calque.add(ligne);
+                var ligne = new Kinetic.Line({
+                    points: [600,1200,100,220,0,50],
+                    stroke: "rgb(50,50,50)",
+                    strokeWidth: 1,
+                });
+                calque.add(ligne);
+                var ligne = new Kinetic.Line({
+                    points: [600,1200,800,700,1000,550,1200,200,2000,150],
+                    stroke: "rgb(50,50,50)",
+                    strokeWidth: 1,
+                });
+                calque.add(ligne);
+
+
+
+                scene.add(calque);
+
+            };
+            $(function(){
+                $('#menu').on('click', function(){
+                    if($(this).attr('cache') == 'O'){
+                        $('#affich_menu').fadeIn(1000);
+                        $(this).attr('cache','N');
+                    }else{
+                        $('#affich_menu').fadeOut(1000);
+                        $(this).attr('cache','O');
+                    }
+                });
+
+            });
+
+        </script>
+    </body>
+
+
+</html>
