@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 gi
 /* des barres feuille de style */
+=======
+>>>>>>> refs/remotes/origin/master
 #affich_menu {
-    z-index: 1000;
+    z-index: 100;
 }
 
 @keyframes move-twink-back {
