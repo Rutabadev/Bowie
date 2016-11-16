@@ -1,5 +1,5 @@
 #affich_menu {
-    z-index: 1000;
+    z-index: 10000;
 }
 
 @keyframes move-twink-back {
