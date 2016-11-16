@@ -4,7 +4,7 @@ gi
 =======
 >>>>>>> refs/remotes/origin/master
 #affich_menu {
-    z-index: 100;
+    z-index: 1000;
 }
 
 @keyframes move-twink-back {
