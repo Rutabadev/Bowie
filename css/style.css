@@ -19,6 +19,14 @@ a:visited {
 color:#64C7C4;
 }
 
+#partenaires {
+    background-color: white;
+}
+
+#partenaires img {
+    padding-left: 2%;
+    padding-right: 2%;
+}
 .menudroite li{
     list-style:none;
     background-image:none;
@@ -42,11 +50,11 @@ color:#64C7C4;
 .swap:hover img:first-child{display:none}
 .swap:hover img:last-child{display:inline-block}
 
+
 H1 {
 font-family: 'Open Sans', sans-serif;
 font-size: 24px;
 color: #64C7C4;
-text-tranform: capitalize;
 font-weight:400
 }
 
@@ -83,7 +91,6 @@ color: #64C7C4;
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #FFFFFF;
-text-tranform: capitalize;
 font-weight:400;
 text-decoration: none;
 }
@@ -104,7 +111,6 @@ color: #64C7C4;
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #64C7C4;
-text-tranform: capitalize;
 font-weight:400;
 text-decoration: none;
 }
@@ -121,7 +127,6 @@ color: #BE0A26;
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #FFFFFF;
-text-tranform: capitalize;
 font-weight:400;
 text-decoration: none;
 }
@@ -165,7 +170,6 @@ margin-bottom: 30px;
 font-family: 'Open Sans', sans-serif;
 font-size: 20px;
 color: #000000;
-text-tranform: capitalize;
 }
 
 .news p {
@@ -179,7 +183,6 @@ text-align:left;
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #64C7C4;
-text-tranform: capitalize;
 font-weight:400;
 text-decoration: none;
 }
