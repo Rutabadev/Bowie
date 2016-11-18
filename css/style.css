@@ -172,6 +172,7 @@ p.abstract {
 #footer a {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    background-color: transparent;
     color: #FFFFFF;
     font-weight: 400;
     text-decoration: none;
