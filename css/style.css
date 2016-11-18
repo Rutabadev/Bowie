@@ -3,9 +3,13 @@
 /* CSS Document */
 
 body {
-    background-color: black;
-    background-image: url(../images/space.png);
+    background-color:black;
 }
+
+.spaceground {
+    background-image:url(../images/space.png);
+}
+
 
 #burger {
     background-color: #64C7C4;
@@ -183,12 +187,15 @@ p.abstract {
  */
 
 .button {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    padding: 10px 24px;
-    background-color: #64C7C4;
-    text-align: center;
-    text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+font-size: 12px;
+padding: 10px 24px;
+background-color: #64C7C4;
+text-align: center;
+text-decoration: none;
+border : none;
+color: white;
+font-weight: 700;
 }
 
 .button:hover {
