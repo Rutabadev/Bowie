@@ -1,8 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+    background-color:black;
+    background-image:url(../images/space.png);
+}
+
 a {
-color:#64C7C4;
+color:#FFFFFF;
 text-decoration: none;
 }
 
@@ -34,7 +39,6 @@ font-family: 'Open Sans', sans-serif;
 font-size: 13px;
 color: #FFFFFF;
 line-height: 18px;
-text-align: left;
 font-weight:400
 }
 
