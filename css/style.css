@@ -3,8 +3,12 @@
 
 body {
     background-color:black;
+}
+
+.spaceground {
     background-image:url(../images/space.png);
 }
+
 
 #burger {
     background-color: #64C7C4;
@@ -155,6 +159,9 @@ padding: 10px 24px;
 background-color: #64C7C4;
 text-align: center;
 text-decoration: none;
+border : none;
+color: white;
+font-weight: 700;
 }
 
 .button:hover {
