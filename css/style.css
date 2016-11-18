@@ -2,7 +2,7 @@
 /* CSS Document */
 
 a {
-color:#64C7C4;
+color:#ffffff;
 text-decoration: none;
 }
 
@@ -13,6 +13,29 @@ color:#BE0A26;
 a:visited {
 color:#64C7C4;
 }
+
+.menudroite li{
+    list-style:none;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    margin-top: 10px;
+}
+
+.menudroite {
+    position: fixed;
+    top:30%;
+    right: 15px;
+    z-index: 2;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.swap img:last-child{display:none}
+.swap:hover img:first-child{display:none}
+.swap:hover img:last-child{display:inline-block}
 
 H1 {
 font-family: 'Open Sans', sans-serif;
@@ -28,6 +51,8 @@ font-size: 20px;
 color: #FFFFFF;
 font-weight:400
 }
+
+
 
 p {
 font-family: 'Open Sans', sans-serif;
