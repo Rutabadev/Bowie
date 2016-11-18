@@ -6,6 +6,14 @@ body {
     background-image:url(../images/space.png);
 }
 
+#burger {
+    background-color: #64C7C4;
+}
+
+.icon-bar {
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
 a {
 color:#FFFFFF;
 text-decoration: none;
@@ -87,7 +95,7 @@ color: #64C7C4;
  * Menu principal
  */
 
-#menu a {
+.menu a {
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #FFFFFF;
@@ -95,11 +103,12 @@ font-weight:400;
 text-decoration: none;
 }
 
-#menu a:hover {
-color: #64C7C4;
+.menu a:hover {
+    color: #64C7C4;
+    background-color: transparent !important;     
 }
 
-#menu active {
+.menu active {
 color: #64C7C4;
 }
 
@@ -189,6 +198,12 @@ text-decoration: none;
 
 .news:hover {
 color: #BE0A26;
+}
+
+.btn-dl {
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 
