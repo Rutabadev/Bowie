@@ -2,6 +2,11 @@
 
 /* CSS Document */
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color:black;
 }
@@ -144,8 +149,12 @@ p.abstract {
     background-color: transparent !important;
 }
 
-.menu active {
+.menu:active {
     color: #64C7C4;
+}
+
+.menu li a:focus {
+    background-color: transparent;
 }
 
 
@@ -167,6 +176,36 @@ p.abstract {
 
 #submenu active {
     color: #BE0A26;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+    margin-bottom: 0;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+
+#footer {
+    height: 60px;
 }
 
 #footer a {
@@ -247,4 +286,14 @@ font-weight: 700;
     background-color: transparent;
     border: none;
     color: white;
+}
+
+.panel {
+    background-color: transparent;
+    border-color: #64C7C4;
+}
+
+.form-control {
+    background-color: #64C7C4;
+    border: none;
 }
