@@ -40,11 +40,11 @@ a:visited {
     color: #64C7C4;
 }
 
-#partenaires {
+.partenaires {
     background-color: white;
 }
 
-#partenaires img {
+.partenaires img {
     padding-left: 2%;
     padding-right: 2%;
 }
