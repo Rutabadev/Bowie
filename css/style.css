@@ -11,10 +11,6 @@ body {
     background-color: black;
 }
 
-.indexBody {
-    background-color: #141414;
-}
-
 .spaceground {
     background-image: url(../images/space.png);
 }
@@ -352,12 +348,17 @@ p.abstract {
     width: 100%;
 }
 
-
-video {
-     border: solid 3px white;
+.form-div {
+    background-color: rgba(10, 23, 167, 0.3);    
+    padding: 7px;
+    border-radius: 5px;
 }
 
 .message-window {
-    background-color: white;
+    background-color: #64C7C4;
+}
 
+.message-text {
+    background-color: white;
+    color: black;
 }
