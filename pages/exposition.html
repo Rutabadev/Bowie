@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <script src="../js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -32,19 +34,55 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+        <div class="menudroite visible-lg">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/fb_white.png" class="img-responsive"> <img style="height:150%" src="../images/fb_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/instagram_white.png" class="img-responsive"> <img style="height:150%" src="../images/instagram_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/twitter_white.png" class="img-responsive"> <img style="height:150%" src="../images/twitter_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/youtube_white.png" class="img-responsive"> <img style="height:150%" src="../images/youtube_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/email_white.png" class="img-responsive"> <img style="height:150%" src="../images/email_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/panier_white.png" class="img-responsive"> <img style="height:150%" src="../images/panier_blue.png" class="img-responsive"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- menu sticky gauche -->
+        <nav class="menugauche visible-lg">
+            <ul class="submenu">
+                <li><a href="#mickrock">MICK ROCK</a></li>
+                <li><a href="#davidbowie">DAVID BOWIE</a></li>
+                <li><a href="#lemultiple">LE MULTIPLE</a></li>
+                <li><a href="#authantik">AUTHANTIK</a></li>
+                <li><a href="#videos">VIDEOS</a></li>
+                <li><a href="#partenaires">PARTENAIRES</a></li>
+                <li><a href="#privatisation">PRIVATISATION</a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <div class="row">
+            <div id="mickrock" class="row">
                 <div class="col-xs-7">
                     <h1>L'EXPOSITION</h1>
                     <br>
                     <!-- Section Mick Rock -->
                     <h2>Mick Rock</h2> </div>
-                <div class="col-xs-5"><img src="../images/baseline.png"></div>
+                <div class="col-xs-5"><img src="../images/baseline.png" class="img-responsive"></div>
             </div>
             <div class="row">
-                <div class="col-xs-4"><img src="../images/photo01.png" /></div>
-                <div class="col-xs-4"><img src="../images/photo02.png" /></div>
-                <div class="col-xs-4"><img src="../images/photo03.png" /></div>
+                <div class="col-xs-4"><img src="../images/photo01.png" class="img-responsive" /></div>
+                <div class="col-xs-4" align="center"><img src="../images/photo02.png" class="img-responsive" /></div>
+                <div class="col-xs-4" align="right"><img src="../images/photo03.png" class="img-responsive" /></div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
@@ -57,24 +95,41 @@
                     <p>It is more likely that it will have to wait till the end of George Bushes term in office and then get an amendment to the law that reverses only gambling ban part of the law.</p>
                 </div>
             </div>
+        </div>
+        <div class="interBackground"> <img src="../images/moon.png"> </div>
+        <div class="container">
             <!-- Section David Bowie -->
-            <div class="row">
+            <div id="davidbowie" class="row">
                 <div class="col-xs-12">
                     <h2>David Bowie</h2> </div>
             </div>
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-md-4">
                     <p class="abstract">More and more people are opting to live the herbal life: moving away from chemicals and scientific medicines, and taking traditional herbs to do everything from losing weight to relieving pain. They are often remedies that have been used in communities for hundreds or even thousands of years, and have now been taken for sale worldwide because of the people’s claims about their powers.</p>
                     <br>
                     <p>The last few decades have seen an explosion in the popularity of herbs and alternative medicine in general, as people increasingly seek miracle cures that can help them when their doctor or regular pharmacy cannot. The connection to traditional communities also appeals to those who want to go back to a more spiritual, myth-based way of life, instead of testing everything in a laboratory. It is also often believed that using herbs instead of chemicals can avoid the potential side effects of putting lots of synthetic substances into the body.</p>
                     <br>
                     <p>Many people, however, say that herbal remedies are just a load of mumbo-jumbo, designed to sell gullible people some useless plants at premium prices. When the herbs do have some effect, it is put down to them being a placebo. This means that the act of taking the herb that makes you feel like you should feel better, and so you do, even if there was nothing in the herb itself to make that happen.</p>
                 </div>
-                <div class="col-xs-4"><img src="../images/photo04.png" /><img src="../images/photo06.png" /></div>
-                <div class="col-xs-4"><img src="../images/photo05.png" /><img src="../images/photo07.png" /></div>
+                <div class="hidden-sm hidden-xs">
+                    <div class="col-md-4" align="center"> <img src="../images/photo04.png" class="img-responsive" />
+                        <br> <img src="../images/photo06.png" class="img-responsive" /> </div>
+                    <div class="col-md-4" align="right"> <img src="../images/photo05.png" class="img-responsive" />
+                        <br> <img src="../images/photo07.png" class="img-responsive" /> </div>
+                </div>
+                <div class="hidden-md hidden-lg">
+                    <div class="row">
+                        <div class="col-xs-6" align="center"> <img src="../images/photo04.png" class="img-responsive" /> </div>
+                        <div class="col-xs-6"> <img src="../images/photo05.png" class="img-responsive" /> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6" align="center"> <img src="../images/photo06.png" class="img-responsive" /> </div>
+                        <div class="col-xs-6"> <img src="../images/photo07.png" class="img-responsive" /> </div>
+                    </div>
+                </div>
             </div>
             <!-- Section Le Multiple -->
-            <div class="row">
+            <div id="lemultiple" class="row">
                 <div class="col-xs-12">
                     <h2>Le multiple</h2></div>
             </div>
@@ -90,8 +145,11 @@
                     <p>Now everything you need to make your truly wireless headset a terrific piece of equipment is all combined in one package. This package is called the GN 9120. Completely wireless, this headset package gives you a range of up to 300 feet. It has a frequency of 2.4 GHz to deliver that much range. You can also purchase a lower priced GN9120 LR for a more limited but still quality wireless headset.</p>
                 </div>
             </div>
+        </div>
+        <div class="interBackground"> <img align="right" src="../images/fusee.png"> </div>
+        <div class="container">
             <!-- Section Authantik -->
-            <div class="row">
+            <div id="authantik" class="row">
                 <div class="col-xs-12">
                     <h2>Authentik</h2></div>
             </div>
@@ -111,15 +169,19 @@
             </div>
             <!-- Section Vidéos -->
             <div class="row">
-                <div class="col-xs-12">Widget YouTube</div>
+                <div class="col-xs-12" align="center">
+                    <video preload="none" poster="../images/videoPoster.png" controls>
+                        <source src="../videos/lifonmars_v2.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <!-- Section Partenaires -->
-            <div class="row">
+            <div class="row" id="partenaires">
                 <div class="col-xs-12">
                     <h2>Partenaires</h2> </div>
             </div>
         </div>
-        <div id="partenaires" class="container-fluid">
+        <div class="container-fluid partenaires">
             <div class="row" align="center">
                 <div class="col-xs-12"> <img src="../images/TLSE%20METROPOLE%20logo%20couleur%20positif-scu.png"> <img src="../images/CiteEspace-horiz.png"> <img src="../images/CNES_Logo2013_P%20bleu.png"> <img src="../images/leMultiple-01-bleu-150624.png"> <img src="../images/nostalgie.png"> <img src="../images/EXE%20LOGO%20TFC%20PNG.png"> </div>
             </div>
@@ -132,7 +194,7 @@
         </div>
         <div class="container">
             <!-- Section Privatisation -->
-            <div class="row">
+            <div id="privatisation" class="row">
                 <div class="col-xs-12">
                     <h2>Privatisation</h2> </div>
             </div>
@@ -143,61 +205,125 @@
                     <p>If truth be told, (after reading random excerpts from “The Itty Bitty Bunkum Book About Life, the Universe & Practically Everything Under the Sun Not To Mention Stuff Going On In Remote Galaxies), I was basically delirious. According to its noted author, Dr. Jarn Leffer, “IT is a ‘must-see’ for those with little time on their hands & a passionate interest in Innocuous Things.”</p>
                 </div>
             </div>
-            <div class="row" align="center">
-                <div class="col-xs-3">
-                    <h1>Startup</h1>
-                    <h2>€ 35</h2>
-                    <p>€ 900 yearly</p>
-                    <p>SETUP FEES</p>
-                </div>
-                <div class="col-xs-3">
-                    <h1>Buisness</h1>
-                    <h2>€ 75 /MO</h2>
-                    <p>€ 1500 yearly</p>
-                    <p>SETUP FEES</p>
-                </div>
-                <div class="col-xs-3">
-                    <h1>Partner</h1>
-                    <h2>€ 125 /MO</h2>
-                    <p>€ 2500 yearly</p>
-                    <p>SETUP FEES</p>
-                    <p class="abstract">unlimited</p>
-                    <p class="abstract">AMOUNT OF EVENTS</p>
-                </div>
-                <div class="col-xs-3">
-                    <h1>Innovate</h1>
-                    <h2>€ 125 /MO</h2>
-                    <p>€ 5000 yearly</p>
-                    <p>SETUP FEES</p>
-                    <p class="abstract">unlimited</p>
-                    <p class="abstract">AMOUNT OF EVENTS</p>
+            <div class="visible-xs">
+                <div class="row centered-row" align="center">
+                    <div class="col-md-3">
+                        <h1>Startup</h1>
+                        <h2>€ 35</h2>
+                        <p>€ 900 yearly</p>
+                        <p>SETUP FEES</p>
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
+                    <div class="col-md-3 centered-row">
+                        <h1>Buisness</h1>
+                        <h2>€ 75 /MO</h2>
+                        <p>€ 1500 yearly</p>
+                        <p>SETUP FEES</p>
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
+                    <div class="col-md-3 centered-row">
+                        <h1>Partner</h1>
+                        <h2>€ 125 /MO</h2>
+                        <p>€ 2500 yearly</p>
+                        <p>SETUP FEES</p>
+                        <p class="abstract">unlimited</p>
+                        <p class="abstract">AMOUNT OF EVENTS</p>
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
+                    <div class="col-md-3 centered-row">
+                        <h1>Innovate</h1>
+                        <h2>€ 125 /MO</h2>
+                        <p>€ 5000 yearly</p>
+                        <p>SETUP FEES</p>
+                        <p class="abstract">unlimited</p>
+                        <p class="abstract">AMOUNT OF EVENTS</p>
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
                 </div>
             </div>
-            <div class="row" align="center">
-                <div class="col-xs-3">
-                    <button class="button">CONTACTER L'ORGANISATION</button>
+            <div class="hidden-xs">
+                <div class="row centered-row" align="center">
+                    <div class="col-sm-3">
+                        <h1>Startup</h1>
+                        <h2>€ 35</h2>
+                        <p>€ 900 yearly</p>
+                        <p>SETUP FEES</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h1>Business</h1>
+                        <h2>€ 75 /MO</h2>
+                        <p>€ 1500 yearly</p>
+                        <p>SETUP FEES</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h1>Partner</h1>
+                        <h2>€ 125 /MO</h2>
+                        <p>€ 2500 yearly</p>
+                        <p>SETUP FEES</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h1>Innovate</h1>
+                        <h2>€ 125 /MO</h2>
+                        <p>€ 5000 yearly</p>
+                        <p>SETUP FEES</p>
+                    </div>
                 </div>
-                <div class="col-xs-3">
-                    <button class="button">CONTACTER L'ORGANISATION</button>
+                <div class="row centered-row" align="center">
+                    <div class="col-sm-3 col-xs-offset-6">
+                        <p class="abstract">unlimited</p>
+                        <p class="abstract">AMOUNT OF EVENTS</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="abstract">unlimited</p>
+                        <p class="abstract">AMOUNT OF EVENTS</p>
+                    </div>
                 </div>
-                <div class="col-xs-3">
-                    <button class="button">CONTACTER L'ORGANISATION</button>
-                </div>
-                <div class="col-xs-3">
-                    <button class="button">CONTACTER L'ORGANISATION</button>
+                <div class="row" align="center">
+                    <div class="col-sm-3">
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="push"></div>
     </div>
+    <div id="cosmau"> <img src="../images/cosmonautes.png"> </div>
     <div id="footer">
         <nav id="footer" class="navbar navbar-static-bottom">
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#">PARTENAIRES</a></li>
-                    <li><a href="#">PRESSE</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="exposition.html#partenaires">PARTENAIRES</a></li>
+                    <li><a href="infos-pratiques.html#presse">PRESSE</a></li>
+                    <li><a href="infos-pratiques.html#contact">CONTACT</a></li>
                     <li><a href="#">MENTIONS LEGALES </a></li>
+                </ul>
+                <ul id="footerSocial" class="nav navbar-nav navbar-right hidden-lg">
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/fb_white.png" class="img-responsive"> <img style="height:150%" src="images/fb_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/instagram_white.png" class="img-responsive"> <img style="height:150%" src="../images/instagram_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/twitter_white.png" class="img-responsive"> <img style="height:150%" src="../images/twitter_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/youtube_white.png" class="img-responsive"> <img style="height:150%" src="../images/youtube_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/email_white.png" class="img-responsive"> <img style="height:150%" src="../images/email_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="../images/panier_white.png" class="img-responsive"> <img style="height:150%" src="../images/panier_blue.png" class="img-responsive"></a>
+                    </li>
                 </ul>
             </div>
         </nav>

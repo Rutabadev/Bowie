@@ -2,16 +2,23 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
     <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/konva.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
     <title>Bowie</title>
     <link rel="stylesheet" href="css/style.css"> </head>
 
-<body>
+<body class="indexBody">
     <div class="wrap">
-        <nav class="navbar navbar-static-top">
+        <nav id="indexNavbar" class="navbar navbar-static-top indexNavbar">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -32,9 +39,143 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <div class="menudroite visible-lg">
-            <nav>
-                <ul>
+    </div>
+    <div class="menudroite visible-lg">
+        <nav>
+            <ul>
+                <li>
+                    <a class="swap" href="#"> <img style="height:150%" src="images/fb_white.png" class="img-responsive"> <img style="height:150%" src="images/fb_blue.png" class="img-responsive"></a>
+                </li>
+                <li>
+                    <a class="swap" href="#"> <img style="height:150%" src="images/instagram_white.png" class="img-responsive"> <img style="height:150%" src="images/instagram_blue.png" class="img-responsive"></a>
+                </li>
+                <li>
+                    <a class="swap" href="#"> <img style="height:150%" src="images/twitter_white.png" class="img-responsive"> <img style="height:150%" src="images/twitter_blue.png" class="img-responsive"></a>
+                </li>
+                <li>
+                    <a class="swap" href="#"> <img style="height:150%" src="images/youtube_white.png" class="img-responsive"> <img style="height:150%" src="images/youtube_blue.png" class="img-responsive"></a>
+                </li>
+                <li>
+                    <a class="swap" href="#"> <img style="height:150%" src="images/email_white.png" class="img-responsive"> <img style="height:150%" src="images/email_blue.png" class="img-responsive"></a>
+                </li>
+                <li>
+                    <a class="swap" href="#"> <img style="height:150%" src="images/panier_white.png" class="img-responsive"> <img style="height:150%" src="images/panier_blue.png" class="img-responsive"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="constellationContainer" class="hidden-xs hidden-sm"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
+            <div class="col-xs-7 ">
+                <h2 align="right" class="bold">Du 2 décembre 2016<br>
+                        au 15 janvier 2017</h2> </div>
+        </div>
+        <div class="row hidden-xs">
+            <div class="col-xs-4">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <a href="pages/exposition.html">
+                            <div class="item active"> <img src="images/expo.png" alt="" class="image-sale img-responsive">
+                                <div class="carousel-caption carousel-menu ">
+                                    <h2 class="textmenu">L'EXPO</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-xs-4">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <a href="pages/infos-pratiques.html">
+                                <div class="item active"> <img src="images/infos_pratiques.png" alt="" class="image-sale img-responsive">
+                                    <div class="carousel-caption carousel-menu ">
+                                        <h2 class="textmenu">INFOS PRATIQUES</h2></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <a href="pages/billetterie.html">
+                                <div class="item active"> <img src="images/billeterie.png" alt="" class="image-sale img-responsive">
+                                    <div class="carousel-caption carousel-menu ">
+                                        <h2 class="textmenu">BILLETTERIE</h2></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <h1 align="center">Dernières actualités</h1></div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <div id="owl-news" class="owl-carousel owl-theme">
+                    <div class="item news"> <img src="images/news_one.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle">CONFERENCE DE PRESSE</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p> <a href="pages/actu.html">LIRE L'ARTICLE</a> </div>
+                    </div>
+                    <div class="item news"> <img src="images/news_two.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle">INAUGURATION</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p> <a href="pages/actu.html">LIRE L'ARTICLE</a> </div>
+                    </div>
+                    <div class="item news"> <img src="images/news_three.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle">INTERVIEW</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p> <a href="pages/actu.html">LIRE L'ARTICLE</a> </div>
+                    </div>
+                    <div class="item news"> <img src="images/news_one.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle">ACTUALITE 4</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p> <a href="pages/actu.html">LIRE L'ARTICLE</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" align="center">
+                <video preload="none" poster="images/videoPoster.png" controls>
+                    <source src="videos/lifonmars_v2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 align="center">#ExpoLifeOnMars</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- SnapWidget -->
+                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                    <iframe src="https://snapwidget.com/embed/code/211934" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <nav id="footer" class="navbar navbar-static-bottom">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="pages/exposition.html#partenaires">PARTENAIRES</a></li>
+                    <li><a href="pages/infos-pratiques.html#presse">PRESSE</a></li>
+                    <li><a href="pages/infos-pratiques.html#contact">CONTACT</a></li>
+                    <li><a href="#">MENTIONS LEGALES </a></li>
+                </ul>
+                <ul id="footerSocial" class="nav navbar-nav navbar-right hidden-lg">
                     <li>
                         <a class="swap" href="#"> <img style="height:150%" src="images/fb_white.png" class="img-responsive"> <img style="height:150%" src="images/fb_blue.png" class="img-responsive"></a>
                     </li>
@@ -54,73 +195,11 @@
                         <a class="swap" href="#"> <img style="height:150%" src="images/panier_white.png" class="img-responsive"> <img style="height:150%" src="images/panier_blue.png" class="img-responsive"></a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
-                <div class="col-xs-7 ">
-                    <h2 align="right" class="bold">Du 2 décembre 2016<br>
-                au 15 janvier 2017</h2> </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <a href="#"><img src="images/expo.png" class="img-responsive image-sale">
-                        <div class="textmenu" align="center">
-                            <h2>L'EXPO</h2></div>
-                    </a>
-                </div>
-                <div class="col-xs-4">
-                    <a href="#"><img src="images/infos_pratiques.png" class="img-responsive image-sale">
-                        <div class="textmenu" align="center">
-                            <h2>INFOS PRATIQUES</h2></div>
-                    </a>
-                </div>
-                <div class="col-xs-4">
-                    <a href="#"><img src="images/billeterie.png" alt="BILLETERIE" class="img-responsive image-sale">
-                        <div class="textmenu" align="center">
-                            <h2>BILLETTERIE</h2></div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 ">
-                    <h1 align="center">Dernières actualités</h1></div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">Caroussel news</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 ">
-                    <div> </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 align="center">#ExpoLifeOnMars</h1></div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <!-- SnapWidget -->
-                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                    <iframe src="https://snapwidget.com/embed/code/211934" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-                </div>
-            </div>
-        </div>
-        <div id="push"></div>
-    </div>
-    <div id="footer">
-        <nav id="footer" class="navbar navbar-static-bottom">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#">PARTENAIRES</a></li>
-                    <li><a href="#">PRESSE</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">MENTIONS LEGALES </a></li>
-                </ul>
             </div>
         </nav>
     </div>
+    <script src="js/constellation.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
