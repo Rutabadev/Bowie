@@ -6,12 +6,13 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="js/konva.js"></script>
     <title>Bowie</title>
     <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
     <div class="wrap">
-        <nav class="navbar navbar-static-top">
+        <nav id="indexNavbar" class="navbar navbar-static-top indexNavbar">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -56,6 +57,7 @@
                 </ul>
             </nav>
         </div>
+		<div id="constellationContainer" class="hidden-xs hidden-sm"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
@@ -121,6 +123,7 @@
             </div>
         </nav>
     </div>
+	<script src="js/constellation.js"></script>
 </body>
 
 </html>
