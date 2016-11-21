@@ -1,22 +1,39 @@
 @charset "UTF-8";
+
 /* CSS Document */
 
+html,
 body {
-    background-color:black;
-    background-image:url(../images/space.png);
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.spaceground {
+    background-image: url(../images/space.png);
+}
+
+#burger {
+    background-color: #64C7C4;
+}
+
+.icon-bar {
+    background-color: rgba(0, 0, 0, 0.78);
 }
 
 a {
-color:#FFFFFF;
-text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 a:hover {
-color:#BE0A26;
+    color: #BE0A26;
 }
 
 a:visited {
-color:#64C7C4;
+    color: #64C7C4;
 }
 
 #partenaires {
@@ -27,168 +44,305 @@ color:#64C7C4;
     padding-left: 2%;
     padding-right: 2%;
 }
-.menudroite li{
-    list-style:none;
-    background-image:none;
-    background-repeat:none;
-    background-position:0;
+
+.menudroite li {
+    list-style: none;
+    background-image: none;
+    background-repeat: none;
+    background-position: 0;
     margin-top: 10px;
 }
 
 .menudroite {
     position: fixed;
-    top:30%;
+    top: 30%;
     right: 15px;
     z-index: 2;
+}
+
+.textmenu {
+    z-index: 2;
+    bottom: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(207, 210, 213, 0.1);
+}
+
+.textmenu:hover {
+    transition: background-color 1.2s ease;
+    background-color: rgba(158, 158, 158, 1);
 }
 
 .bold {
     font-weight: 700;
 }
 
-.swap img:last-child{display:none}
-.swap:hover img:first-child{display:none}
-.swap:hover img:last-child{display:inline-block}
+.swap img:last-child {
+    display: none
+}
 
+.swap:hover img:first-child {
+    display: none
+}
+
+.swap:hover img:last-child {
+    display: inline-block
+}
+
+.image-sale {
+    width: 100%;
+    height: 100%;
+}
 
 H1 {
-font-family: 'Open Sans', sans-serif;
-font-size: 24px;
-color: #64C7C4;
-font-weight:400
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #64C7C4;
+    font-weight: 400
 }
 
 H2 {
-font-family: 'Open Sans', sans-serif;
-font-size: 20px;
-color: #FFFFFF;
-font-weight:400
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400
 }
-
-
 
 p {
-font-family: 'Open Sans', sans-serif;
-font-size: 13px;
-color: #FFFFFF;
-line-height: 18px;
-font-weight:400
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 18px;
+    font-weight: 400
 }
+
 
 /**
  * Début des textes de paragraphe
  */
 
 p.abstract {
-color: #64C7C4;
+    color: #64C7C4;
 }
+
 
 /**
  * Menu principal
  */
 
-#menu a {
-font-family: 'Open Sans', sans-serif;
-font-size: 14px;
-color: #FFFFFF;
-font-weight:400;
-text-decoration: none;
+.menu a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-decoration: none;
 }
 
-#menu a:hover {
-color: #64C7C4;
+.menu a:hover {
+    color: #64C7C4;
+    background-color: transparent !important;
 }
 
-#menu active {
-color: #64C7C4;
+.menu:active {
+    color: #64C7C4;
 }
+
+.menu li a:focus {
+    background-color: transparent;
+}
+
 
 /**
  * Menu secondaire sticky
  */
 
 #submenu a {
-font-family: 'Open Sans', sans-serif;
-font-size: 14px;
-color: #64C7C4;
-font-weight:400;
-text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #64C7C4;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 #submenu a:hover {
-color: #BE0A26;
+    color: #BE0A26;
 }
 
 #submenu active {
-color: #BE0A26;
+    color: #BE0A26;
+}
+
+
+/* Wrapper for page content to push down footer */
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+
+/* Set the fixed height of the footer here */
+
+#push,
+#footer {
+    height: 60px;
+    margin-bottom: 0;
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#footer {
+    height: 60px;
 }
 
 #footer a {
-font-family: 'Open Sans', sans-serif;
-font-size: 14px;
-color: #FFFFFF;
-font-weight:400;
-text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 #footer a:hover {
-color: #64C7C4;
+    color: #64C7C4;
 }
+
 
 /**
  * Bouton bleu
  */
 
 .button {
-font-family: 'Open Sans', sans-serif;
-font-size: 12px;
-padding: 10px 24px;
-background-color: #64C7C4;
-text-align: center;
-text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    padding: 10px 24px;
+    background-color: #64C7C4;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: 700;
 }
 
 .button:hover {
-background-color: #BE0A26;
+    background-color: #BE0A26;
 }
+
 
 /**
  * Bloc 3 actualités
  */
 
 .sectiontitle {
-font-family: 'Open Sans', sans-serif;
-font-size: 20px;
-color: #64C7C4;
-font-weight:400;
-text-align: center;
-margin-top: 50px;
-margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #64C7C4;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .newstitle {
-font-family: 'Open Sans', sans-serif;
-font-size: 20px;
-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #000000;
 }
 
 .news p {
-font-family: 'Open Sans', sans-serif;
-font-size: 13px;
-color: #617D8C;
-text-align:left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #617D8C;
+    text-align: left;
 }
 
 .news:a {
-font-family: 'Open Sans', sans-serif;
-font-size: 14px;
-color: #64C7C4;
-font-weight:400;
-text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #64C7C4;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .news:hover {
-color: #BE0A26;
+    color: #BE0A26;
+}
+
+.btn-dl {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.panel {
+    background-color: transparent;
+    border-color: #64C7C4;
+}
+
+.form-control {
+    background-color: #64C7C4;
+    border: none;
+}
+
+.form-group,
+.form-control {
+    color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.form-control::-moz-placeholder {
+    color: white;
+    font-style: italic;
 }
 
 
+/* firefox 19+ */
+
+.form-control:-ms-input-placeholder {
+    color: white;
+    font-style: italic;
+}
+
+
+/* ie */
+
+.form-control:-moz-placeholder {
+    color: white;
+    font-style: italic;
+}
+
+/* Constellation */
+#constellationContainer {
+    top: 0;
+    height: 100vh;
+    width: 99vw;
+    overflow:hidden;
+}
+
+.indexNavbar {
+    position: absolute;
+    width: 98vw;
+}
