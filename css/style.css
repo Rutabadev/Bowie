@@ -567,7 +567,7 @@ video {
     color: white;
 }
 
-#background-planet {
+.background-bottom {
     position: absolute;
     bottom : 50px;
     width: 100%;
