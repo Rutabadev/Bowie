@@ -11,6 +11,10 @@ body {
     background-color: black;
 }
 
+.indexBody {
+    background-color: #141414;
+}
+
 .spaceground {
     background-image: url(../images/space.png);
 }
@@ -345,7 +349,7 @@ p.abstract {
 
 .indexNavbar {
     position: absolute;
-    width: 98vw;
+    width: 100%;
 }
 
 
