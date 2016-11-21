@@ -211,6 +211,7 @@ p.abstract {
 
 #footer {
     height: 60px;
+    background-color: black;
 }
 
 #footer a {
@@ -345,4 +346,8 @@ p.abstract {
 .indexNavbar {
     position: absolute;
     width: 98vw;
+}
+
+.message-window {
+    background-color: white;
 }
