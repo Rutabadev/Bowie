@@ -346,3 +346,7 @@ p.abstract {
     position: absolute;
     width: 98vw;
 }
+
+video {
+     border: solid 3px white;
+}
