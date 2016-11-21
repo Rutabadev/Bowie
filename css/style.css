@@ -49,6 +49,33 @@ a:visited {
     padding-right: 2%;
 }
 
+.menugauche ul{
+    left: 0px;
+    padding: 20px;
+    background-color: #64C7C4;
+    border-right-width: 8px;
+    border-right-color: white;
+    border-right-style: solid;
+}
+
+.menugauche li{
+    list-style: none;
+    background-image: none;
+    background-repeat: none;
+    background-position: 0;
+    margin-top: 10px;
+    
+}
+
+.menugauche {
+    position: fixed;
+    top: 30%;
+    left: 0px;
+    z-index: 2;
+    width: 150px;
+
+}
+
 .menudroite li {
     list-style: none;
     background-image: none;
@@ -165,19 +192,20 @@ p.abstract {
  * Menu secondaire sticky
  */
 
-#submenu a {
+.submenu a {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #64C7C4;
+    color: #FFFFFF;
     font-weight: 400;
     text-decoration: none;
 }
 
-#submenu a:hover {
+.submenu a:hover {
     color: #BE0A26;
+    text-decoration: none !important;
 }
 
-#submenu active {
+.submenu active {
     color: #BE0A26;
 }
 
