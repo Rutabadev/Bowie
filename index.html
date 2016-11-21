@@ -1,130 +1,167 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <script src="js/konva.js"></script>
-        <title>Bowie</title>
-        <link rel="stylesheet" href="css/style.css"> </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/konva.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <title>Bowie</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
 
-    <body>
-        <div class="wrap">
-            <nav id="indexNavbar" class="navbar navbar-static-top indexNavbar">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button id="burger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="navbar-brand" href="index.html"><img style="height:150%" src="images/logo.png" class="img-responsive"></a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right menu">
-                            <li><a href="pages/exposition.html">L'EXPOSITION</a></li>
-                            <li><a href="pages/infos-pratiques.html">INFOS PRATIQUES</a></li>
-                            <li><a href="pages/billetterie.html">BILLETTERIE</a></li>
-                            <li><a href="#">FR</a></li>
-                            <li><a href="#">EN</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
+<body>
+    <div class="wrap">
+        <nav id="indexNavbar" class="navbar navbar-static-top indexNavbar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="burger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html"><img style="height:150%" src="images/logo.png" class="img-responsive"></a>
                 </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </div>
-        <div id="constellationContainer" class="hidden-xs hidden-sm"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
-                <div class="col-xs-7 ">
-                    <h2 align="right" class="bold">Du 2 décembre 2016<br>
-                        au 15 janvier 2017</h2> </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right menu">
+                        <li><a href="pages/exposition.html">L'EXPOSITION</a></li>
+                        <li><a href="pages/infos-pratiques.html">INFOS PRATIQUES</a></li>
+                        <li><a href="pages/billetterie.html">BILLETTERIE</a></li>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <div class="row">
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div id="constellationContainer" class="hidden-xs hidden-sm"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
+            <div class="col-xs-7 ">
+                <h2 align="right" class="bold">Du 2 décembre 2016<br>
+                        au 15 janvier 2017</h2> </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <a href="pages/exposition.html">
+                            <div class="item active"> <img src="images/expo.png" alt="" class="image-sale img-responsive">
+                                <div class="carousel-caption carousel-menu ">
+                                    <h2 class="textmenu">L'EXPO</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
                 <div class="col-xs-4">
                     <div id="mycarousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <a href="pages/exposition.html">
-                                <div class="item active"> <img src="images/expo.png" alt="" class="image-sale img-responsive">
+                            <a href="pages/infos-pratiques.html">
+                                <div class="item active"> <img src="images/infos_pratiques.png" alt="" class="image-sale img-responsive">
                                     <div class="carousel-caption carousel-menu ">
-                                        <h2 class="textmenu">L'EXPO</h2></div>
+                                        <h2 class="textmenu">INFOS PRATIQUES</h2></div>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="col-xs-4">
-                        <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <a href="pages/infos-pratiques.html">
-                                    <div class="item active"> <img src="images/infos_pratiques.png" alt="" class="image-sale img-responsive">
-                                        <div class="carousel-caption carousel-menu ">
-                                            <h2 class="textmenu">INFOS PRATIQUES</h2></div>
-                                    </div>
-                                </a>
-                            </div>
+                <div class="col-xs-4">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <a href="pages/billetterie.html">
+                                <div class="item active"> <img src="images/billeterie.png" alt="" class="image-sale img-responsive">
+                                    <div class="carousel-caption carousel-menu ">
+                                        <h2 class="textmenu">BILLETTERIE</h2></div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-xs-4">
-                        <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <a href="pages/billetterie.html">
-                                    <div class="item active"> <img src="images/billeterie.png" alt="" class="image-sale img-responsive">
-                                        <div class="carousel-caption carousel-menu ">
-                                            <h2 class="textmenu">BILLETTERIE</h2></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 ">
-                        <h1 align="center">Dernières actualités</h1></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">Caroussel news</div>
+                <div class="col-xs-12 ">
+                    <h1 align="center">Dernières actualités</h1></div>
             </div>
-            <div class="row">
-                <div class="col-xs-12" style="text-align: center;">
-                    <video width="500" height="430" controls>
-                        <source src="videos/lifonmars_v2.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="row">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h1 align="center">#ExpoLifeOnMars</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <div id="owl-news" class="owl-carousel owl-theme">
+                    <div class="item news"> <img src="images/news_one.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle" >CONFERENCE DE PRESSE</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p>
+                            <a href="">LIRE L'ARTICLE</a>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <!-- SnapWidget -->
-                            <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                            <iframe src="https://snapwidget.com/embed/code/211934" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                    <div class="item news"> <img src="images/news_two.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle">INAUGURATION</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p>
+                            <a href="">LIRE L'ARTICLE</a>
+                        </div>
+                    </div>
+                    <div class="item news"> <img src="images/news_three.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle">INTERVIEW</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p>
+                            <a href="">LIRE L'ARTICLE</a>
+                        </div>
+                    </div>
+                    <div class="item news"> <img src="images/news_one.png" class="img-responsive">
+                        <div class="textnews">
+                            <div class="newstitle" >ACTUALITE 4</div>
+                            <p>There are more lifeform living on your skin than there are people on the planet</p>
+                            <a href="">LIRE L'ARTICLE</a>
                         </div>
                     </div>
                 </div>
-                <div id="push"></div>
             </div>
         </div>
-        <div id="footer">
-            <nav id="footer" class="navbar navbar-static-bottom">
-                <div class="container-fluid">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#">PARTENAIRES</a></li>
-                        <li><a href="#">PRESSE</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li><a href="#">MENTIONS LEGALES </a></li>
-                    </ul>
+        <div class="row">
+            <div class="col-xs-12" style="text-align: center;">
+                <video width="500" height="430" controls>
+                    <source src="videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 align="center">#ExpoLifeOnMars</h1></div>
                 </div>
-            </nav>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- SnapWidget -->
+                        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                        <iframe src="https://snapwidget.com/embed/code/211934" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="push"></div>
         </div>
-        <script src="js/constellation.js"></script>
-    </body>
+    </div>
+    <div id="footer">
+        <nav id="footer" class="navbar navbar-static-bottom">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">PARTENAIRES</a></li>
+                    <li><a href="#">PRESSE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">MENTIONS LEGALES </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script src="js/constellation.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+
 </html>
