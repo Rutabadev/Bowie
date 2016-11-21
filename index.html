@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <script src="js/konva.js"></script>
-        <title>Bowie</title>
-        <link rel="stylesheet" href="css/style.css"> </head>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/konva.js"></script>
+    <title>Bowie</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
 
     <body>
         <div class="wrap">
@@ -33,73 +35,69 @@
                 </div>
                 <!-- /.container-fluid -->
             </nav>
-            <div class="menudroite visible-lg">
-                <nav>
-                    <ul>
-                        <li>
-                            <a class="swap" href="#"> <img style="height:150%" src="images/fb_white.png" class="img-responsive"> <img style="height:150%" src="images/fb_blue.png" class="img-responsive"></a>
-                        </li>
-                        <li>
-                            <a class="swap" href="#"> <img style="height:150%" src="images/instagram_white.png" class="img-responsive"> <img style="height:150%" src="images/instagram_blue.png" class="img-responsive"></a>
-                        </li>
-                        <li>
-                            <a class="swap" href="#"> <img style="height:150%" src="images/twitter_white.png" class="img-responsive"> <img style="height:150%" src="images/twitter_blue.png" class="img-responsive"></a>
-                        </li>
-                        <li>
-                            <a class="swap" href="#"> <img style="height:150%" src="images/youtube_white.png" class="img-responsive"> <img style="height:150%" src="images/youtube_blue.png" class="img-responsive"></a>
-                        </li>
-                        <li>
-                            <a class="swap" href="#"> <img style="height:150%" src="images/email_white.png" class="img-responsive"> <img style="height:150%" src="images/email_blue.png" class="img-responsive"></a>
-                        </li>
-                        <li>
-                            <a class="swap" href="#"> <img style="height:150%" src="images/panier_white.png" class="img-responsive"> <img style="height:150%" src="images/panier_blue.png" class="img-responsive"></a>
-                        </li>
-                    </ul>
-                </nav>
+        </div>
+        <div id="constellationContainer" class="hidden-xs hidden-sm"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
+                <div class="col-xs-7 ">
+                    <h2 align="right" class="bold">Du 2 décembre 2016<br>
+                au 15 janvier 2017</h2> </div>
             </div>
-            <div id="constellationContainer" class="hidden-xs hidden-sm"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
-                    <div class="col-xs-7 ">
-                        <h2 align="right" class="bold">Du 2 d&eacute;cembre 2016<br>
-                            au 15 janvier 2017</h2>
+            <div class="row">
+                <div class="col-xs-4">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <a href="pages/exposition.html">
+                                <div class="item active"> <img src="images/expo.png" alt="" class="image-sale img-responsive">
+                                    <div class="carousel-caption carousel-menu ">
+                                        <h2 class="textmenu">L'EXPO</h2></div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <div>
                     <div class="col-xs-4">
-                        <a href="#"><img src="images/expo.png" class="img-responsive image-sale">
-                            <div class="textmenu" align="center">
-                                <h2>L'EXPO</h2></div>
-                        </a>
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="#"><img src="images/infos_pratiques.png" class="img-responsive image-sale">
-                            <div class="textmenu" align="center">
-                                <h2>INFOS PRATIQUES</h2>
+                        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <a href="pages/infos-pratiques.html">
+                                    <div class="item active"> <img src="images/infos_pratiques.png" alt="" class="image-sale img-responsive">
+                                        <div class="carousel-caption carousel-menu ">
+                                            <h2 class="textmenu">INFOS PRATIQUES</h2></div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-xs-4">
-                        <a href="#"><img src="images/billeterie.png" alt="BILLETERIE" class="img-responsive image-sale">
-                            <div class="textmenu" align="center">
-                                <h2>BILLETTERIE</h2></div>
-                        </a>
+                        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <a href="pages/billetterie.html">
+                                    <div class="item active"> <img src="images/billeterie.png" alt="" class="image-sale img-responsive">
+                                        <div class="carousel-caption carousel-menu ">
+                                            <h2 class="textmenu">BILLETTERIE</h2></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 ">
-                        <h1 align="center">Dernières actualités</h1>
-                    </div>
+                        <h1 align="center">Dernières actualités</h1></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">Caroussel news</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" style="text-align: center;">
+                    <video width="500" height="430" controls>
+                        <source src="videos/lifonmars_v2.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12">Caroussel news</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 ">
-                        <div> </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <h1 align="center">#ExpoLifeOnMars</h1></div>
@@ -128,5 +126,4 @@
         </div>
         <script src="js/constellation.js"></script>
     </body>
-
 </html>
