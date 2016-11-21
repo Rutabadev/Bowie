@@ -367,6 +367,8 @@ p.abstract {
 
 video {
     border: solid 3px white;
+    width: 100%;
+    height: auto;
 }
 
 .form-div {
@@ -391,6 +393,11 @@ video {
 
 #cosmau > img {
     width: 100%;
+}
+
+#footerSocial {
+    display: flex;
+    align-items: center;
 }
 
 
