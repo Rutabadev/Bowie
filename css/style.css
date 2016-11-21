@@ -348,6 +348,17 @@ p.abstract {
     width: 98vw;
 }
 
+.form-div {
+    background-color: rgba(10, 23, 167, 0.3);    
+    padding: 7px;
+    border-radius: 5px;
+}
+
 .message-window {
+    background-color: #64C7C4;
+}
+
+.message-text {
     background-color: white;
+    color: black;
 }
