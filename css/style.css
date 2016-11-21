@@ -3,8 +3,9 @@
 /* CSS Document */
 
 html {
-  height: 100%;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
 }
 
 *,
@@ -14,11 +15,7 @@ html {
 }
 
 body {
-    position: relative;
-    padding-bottom: 50px;
-    margin: 0;
-    min-height: 100%;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin-bottom: 60px;
     background-color: black;
 }
 
@@ -226,10 +223,11 @@ p.abstract {
 #footer {
     background-color: black;
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
     margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
 }
 
 #footer a {
@@ -572,4 +570,8 @@ video {
     bottom : 50px;
     width: 100%;
     z-index: -15;
+}
+
+.blackground {
+    background-color: black;
 }
