@@ -348,6 +348,11 @@ p.abstract {
     width: 98vw;
 }
 
+<<<<<<< HEAD
+video {
+     border: solid 3px white;
+=======
 .message-window {
     background-color: white;
+>>>>>>> refs/remotes/origin/master
 }
