@@ -40,11 +40,11 @@ a:visited {
     color: #64C7C4;
 }
 
-#partenaires {
+.partenaires {
     background-color: white;
 }
 
-#partenaires img {
+.partenaires img {
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -394,6 +394,8 @@ p.abstract {
 
 video {
     border: solid 3px white;
+    width: 100%;
+    height: auto;
 }
 
 .form-div {
@@ -409,6 +411,7 @@ video {
 .message-text {
     background-color: white;
     color: black;
+    resize: none;
 }
 
 .centered-row p {
@@ -422,6 +425,11 @@ video {
 
 #cosmau > img {
     width: 100%;
+}
+
+#footerSocial {
+    display: flex;
+    align-items: center;
 }
 
 
