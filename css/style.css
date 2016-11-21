@@ -129,14 +129,14 @@ H1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     color: #64C7C4;
-    font-weight: 400
+    font-weight: 400;
 }
 
 H2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
-    font-weight: 400
+    font-weight: 400;
 }
 
 p {
@@ -144,7 +144,8 @@ p {
     font-size: 13px;
     color: #FFFFFF;
     line-height: 18px;
-    font-weight: 400
+    font-weight: 400;
+    text-align: justify;
 }
 
 
@@ -225,7 +226,6 @@ p.abstract {
 
 #push,
 #footer {
-    height: 60px;
     margin-bottom: 0;
 }
 
@@ -242,7 +242,6 @@ p.abstract {
 }
 
 #footer {
-    height: 60px;
     background-color: black;
 }
 
@@ -410,6 +409,10 @@ video {
 .message-text {
     background-color: white;
     color: black;
+}
+
+.centered-row p {
+    text-align: center;
 }
 
 .interBackground {
