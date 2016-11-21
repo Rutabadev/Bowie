@@ -379,8 +379,3 @@ video {
 #cosmau > img {
     width: 100%;
 }
-
-#footerSocial {
-    display: flex;
-    align-items: center;
-}
