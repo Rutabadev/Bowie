@@ -383,6 +383,7 @@ video {
 .message-text {
     background-color: white;
     color: black;
+    resize: none;
 }
 
 .centered-row p {
