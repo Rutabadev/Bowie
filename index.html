@@ -6,104 +6,124 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="js/konva.js"></script>
     <title>Bowie</title>
     <link rel="stylesheet" href="css/style.css"> </head>
 
-
-<body style="background-color :black">
-    <nav class="navbar navbar-static-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button id="burger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="index.html"><img style="height:150%" src="images/logo.png" class="img-responsive"></a>
+<body>
+    <div class="wrap">
+        <nav id="indexNavbar" class="navbar navbar-static-top indexNavbar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="burger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html"><img style="height:150%" src="images/logo.png" class="img-responsive"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right menu">
+                        <li><a href="pages/exposition.html">L'EXPOSITION</a></li>
+                        <li><a href="pages/infos-pratiques.html">INFOS PRATIQUES</a></li>
+                        <li><a href="pages/billetterie.html">BILLETTERIE</a></li>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right menu">
-                    <li><a href="pages/exposition.html">L'EXPOSITION</a></li>
-                    <li><a href="pages/infos-pratiques.html">INFOS PRATIQUES</a></li>
-                    <li><a href="pages/billetterie.html">BILLETTERIE</a></li>
-                    <li><a href="#">FR</a></li>
-                    <li><a href="#">EN</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div class="menudroite visible-lg">
-        <nav>
-            <ul>
-                <li>
-                    <a class="swap" href="#"> <img style="height:150%" src="images/fb_white.png" class="img-responsive"> <img style="height:150%" src="images/fb_blue.png" class="img-responsive"></a>
-                </li>
-                <li>
-                    <a class="swap" href="#"> <img style="height:150%" src="images/instagram_white.png" class="img-responsive"> <img style="height:150%" src="images/instagram_blue.png" class="img-responsive"></a>
-                </li>
-                <li>
-                    <a class="swap" href="#"> <img style="height:150%" src="images/twitter_white.png" class="img-responsive"> <img style="height:150%" src="images/twitter_blue.png" class="img-responsive"></a>
-                </li>
-                <li>
-                    <a class="swap" href="#"> <img style="height:150%" src="images/youtube_white.png" class="img-responsive"> <img style="height:150%" src="images/youtube_blue.png" class="img-responsive"></a>
-                </li>
-                <li>
-                    <a class="swap" href="#"> <img style="height:150%" src="images/email_white.png" class="img-responsive"> <img style="height:150%" src="images/email_blue.png" class="img-responsive"></a>
-                </li>
-                <li>
-                    <a class="swap" href="#"> <img style="height:150%" src="images/panier_white.png" class="img-responsive"> <img style="height:150%" src="images/panier_blue.png" class="img-responsive"></a>
-                </li>
-            </ul>
+            <!-- /.container-fluid -->
         </nav>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
-            <div class="col-xs-7 ">
-                <h2 align=right class="bold">Du 2 décembre 2016<br>
+        <div class="menudroite visible-lg">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="images/fb_white.png" class="img-responsive"> <img style="height:150%" src="images/fb_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="images/instagram_white.png" class="img-responsive"> <img style="height:150%" src="images/instagram_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="images/twitter_white.png" class="img-responsive"> <img style="height:150%" src="images/twitter_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="images/youtube_white.png" class="img-responsive"> <img style="height:150%" src="images/youtube_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="images/email_white.png" class="img-responsive"> <img style="height:150%" src="images/email_blue.png" class="img-responsive"></a>
+                    </li>
+                    <li>
+                        <a class="swap" href="#"> <img style="height:150%" src="images/panier_white.png" class="img-responsive"> <img style="height:150%" src="images/panier_blue.png" class="img-responsive"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+		<div id="constellationContainer" class="hidden-xs hidden-sm"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5"><img src="images/baseline.png" class="img-responsive"> </div>
+                <div class="col-xs-7 ">
+                    <h2 align="right" class="bold">Du 2 décembre 2016<br>
                 au 15 janvier 2017</h2> </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-4"><a href="#"><img src="images/expo.png" class="img-responsive image-sale"><div class="textmenu" align="center"><h2>L'EXPO</h2></div></a></div>
-            <div class="col-xs-4"><a href="#"><img src="images/infos_pratiques.png" class="img-responsive image-sale"><div class="textmenu" align=center><h2>INFOS PRATIQUES</h2></div></a></div>
-            <div class="col-xs-4"><a href="#"><img src="images/billeterie.png" alt="BILLETERIE" class="img-responsive image-sale"><div class="textmenu" align=center><h2>BILLETTERIE</h2></div></a></div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 ">
-                <h1 align=center>Dernières actualités</h1></div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">Caroussel news</div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 ">
-                <div> </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="#"><img src="images/expo.png" class="img-responsive image-sale">
+                        <div class="textmenu" align="center">
+                            <h2>L'EXPO</h2></div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#"><img src="images/infos_pratiques.png" class="img-responsive image-sale">
+                        <div class="textmenu" align="center">
+                            <h2>INFOS PRATIQUES</h2></div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#"><img src="images/billeterie.png" alt="BILLETERIE" class="img-responsive image-sale">
+                        <div class="textmenu" align="center">
+                            <h2>BILLETTERIE</h2></div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <h1 align="center">Dernières actualités</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">Caroussel news</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <div> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 align="center">#ExpoLifeOnMars</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- SnapWidget -->
+                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                    <iframe src="https://snapwidget.com/embed/code/211934" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 align=center>#ExpoLifeOnMars</h1></div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <!-- SnapWidget -->
-                <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                <iframe src="https://snapwidget.com/embed/code/211934" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-            </div>
-        </div>
+        <div id="push"></div>
     </div>
-    <footer>
-        <div class="container-fluid">
-            <nav class="navbar navbar-static-bottom" role="navigation">
+    <div id="footer">
+        <nav id="footer" class="navbar navbar-static-bottom">
+            <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="#">PARTENAIRES</a></li>
                     <li><a href="#">PRESSE</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <li><a href="#">MENTIONS LEGALES </a></li>
                 </ul>
-            </nav>
-        </div>
-    </footer>
+            </div>
+        </nav>
+    </div>
+	<script src="js/constellation.js"></script>
 </body>
 
 </html>
