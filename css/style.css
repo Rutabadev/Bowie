@@ -370,3 +370,12 @@ video {
     background-color: white;
     color: black;
 }
+
+.interBackground {
+    width: 100%;
+    position: absolute;
+}
+
+#cosmau > img {
+    width: 100%;
+}
