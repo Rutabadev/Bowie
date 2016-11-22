@@ -2,14 +2,23 @@
 
 /* CSS Document */
 
-html,
-body {
-    height: 100%;
+html {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
+    margin-bottom: 60px;
     background-color: black;
 }
+
 
 .indexBody {
     background-color: #141414;
@@ -211,38 +220,14 @@ p.abstract {
 }
 
 
-/* Wrapper for page content to push down footer */
-
-#wrap {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    /* Negative indent footer by it's height */
-    margin: 0 auto -60px;
-}
-
-
-/* Set the fixed height of the footer here */
-
-#push,
-#footer {
-    margin-bottom: 0;
-}
-
-
-/* Lastly, apply responsive CSS fixes as necessary */
-
-@media (max-width: 767px) {
-    #footer {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
 #footer {
     background-color: black;
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
 }
 
 #footer a {
@@ -338,12 +323,22 @@ p.abstract {
 
 .panel {
     background-color: transparent;
-    border-color: #64C7C4;
+    border-radius: 0px;
+    border: 3px solid #64C7C4;
+    padding-bottom: 20px;
+}
+
+.panel-gitan-gauche {
+    border-right: none;
+}
+
+.panel-gitan-droite {
+    border-left: none;
 }
 
 .form-control {
     background-color: #64C7C4;
-    border: none;
+    border: none;    
 }
 
 .form-group,
@@ -570,6 +565,13 @@ video {
     color: white;
 }
 
-.footer-gitan {
-    height: 60px;
+.background-bottom {
+    position: absolute;
+    bottom : 50px;
+    width: 100%;
+    z-index: -15;
+}
+
+.blackground {
+    background-color: black;
 }
