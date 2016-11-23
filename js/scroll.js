@@ -1,9 +1,11 @@
-$('.back-to-top').css({
-    "display": "none"
-});
 jQuery(document).ready(function () {
     var offset = 250;
     var duration = 300;
+    if ($(window).scrollTop() > offset) {
+        $('.back-to-top').css({
+            "display": "inline"
+        });
+    }
     jQuery(window).scroll(function () {
         if (jQuery(this).scrollTop() > offset) {
             jQuery('.back-to-top').fadeIn(duration);
