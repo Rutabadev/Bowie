@@ -578,6 +578,9 @@ video {
 }
 
 .back-to-top {
+    background: url('../images/top_blue.png') no-repeat center;
+    height: 32px;
+    width: 32px;
     margin: 0;
     position: fixed;
     bottom: 15px;
