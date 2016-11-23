@@ -16,7 +16,7 @@ var stage = new Konva.Stage({
 // Resize handler
 function resizeStage() {
 
-    if ($('#constellationContainer').css('display') == 'none') {
+    if ($('#constellationContainerTop').css('display') == 'none') {
         $('#indexNavbar').removeClass('indexNavbar');
     }
     else {
