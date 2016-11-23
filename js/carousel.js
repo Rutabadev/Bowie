@@ -12,8 +12,8 @@ $(document).ready(function() {
   $("#owl-news").owlCarousel({
     navigation: true,
     navigationText: [
-        "<img src='images/prev-horizontal.png' clas='owl-prev'>",
-      "<img src='images/next-horizontal.png' clas='owl-next'>"
+        "<img src='images/prev-horizontal.png' class='owl-prev'>",
+      "<img src='images/next-horizontal.png' class='owl-next'>"
       ],
     beforeInit : function(elem){
       //Parameter elem pointing to $("#owl-demo")
