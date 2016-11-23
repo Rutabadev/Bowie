@@ -1,12 +1,13 @@
-$('.back-to-top').css({"display": "none"});
+$('.back-to-top').css({
+    "display": "none"
+});
 jQuery(document).ready(function () {
     var offset = 250;
     var duration = 300;
     jQuery(window).scroll(function () {
         if (jQuery(this).scrollTop() > offset) {
             jQuery('.back-to-top').fadeIn(duration);
-        }
-        else {
+        } else {
             jQuery('.back-to-top').fadeOut(duration);
         }
     });
@@ -19,17 +20,17 @@ jQuery(document).ready(function () {
     })
 });
 
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 300);
-        return false;
-      }
-    }
-  });
+$(function () {
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 300);
+                return false;
+            }
+        }
+    });
 });
