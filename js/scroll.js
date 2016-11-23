@@ -1,9 +1,9 @@
 jQuery(document).ready(function () {
     var offset = 250;
     var duration = 300;
-    if ($(window).scrollTop() < offset) {
+    if ($(window).scrollTop() > offset) {
         $('.back-to-top').css({
-            "display": "none"
+            "display": "inline"
         });
     }
     jQuery(window).scroll(function () {
