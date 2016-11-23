@@ -594,6 +594,7 @@ video {
     bottom: 70px;
     right: 15px;
     z-index: 100;
+    display: none;
 }
 
 .full-width {
