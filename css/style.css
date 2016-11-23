@@ -319,6 +319,7 @@ p.abstract {
     background-color: transparent;
     border: none;
     color: white;
+    text-align: left;
 }
 
 .panel {
