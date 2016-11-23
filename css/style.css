@@ -315,6 +315,7 @@ p.abstract {
     background-color: transparent;
     border: none;
     color: white;
+    text-align: left;
 }
 
 .panel {
@@ -583,7 +584,7 @@ video {
     width: 32px;
     margin: 0;
     position: fixed;
-    bottom: 15px;
+    bottom: 70px;
     right: 15px;
     z-index: 100;
 }
