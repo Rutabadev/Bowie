@@ -17,6 +17,7 @@ html {
 body {
     margin-bottom: 60px;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .indexBody {
@@ -427,6 +428,12 @@ video {
 @media (max-width: 856px) and (min-width: 768px) {
     #footerSocial {
         float: left !important;
+    }
+}
+
+@media (max-width: 856px) {
+    .owl-buttons {
+        display: none;
     }
 }
 
