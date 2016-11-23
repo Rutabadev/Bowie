@@ -373,6 +373,23 @@ p.abstract {
 
 /* Constellation */
 
+#constellationContainerTop {
+    position: relative;
+}
+
+#constellationContainerTop > a {
+    position: absolute;
+    bottom: 20px;
+}
+
+#constellationContainerTop > a > img {
+    display: block;
+}
+
+#constellationContainerTop > a > img:first-child {
+    margin-bottom: 5px;
+}
+
 #constellationContainer {
     top: 0;
     height: 100vh;
