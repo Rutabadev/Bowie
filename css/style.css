@@ -11,14 +11,13 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
     margin-bottom: 60px;
     background-color: black;
 }
-
 
 .indexBody {
     background-color: #141414;
@@ -58,7 +57,7 @@ a:visited {
     padding-right: 2%;
 }
 
-.menugauche ul{
+.menugauche ul {
     left: 0px;
     padding: 20px;
     background-color: #64C7C4;
@@ -67,13 +66,12 @@ a:visited {
     border-right-style: solid;
 }
 
-.menugauche li{
+.menugauche li {
     list-style: none;
     background-image: none;
     background-repeat: none;
     background-position: 0;
     margin-top: 10px;
-    
 }
 
 .menugauche {
@@ -82,7 +80,6 @@ a:visited {
     left: 0px;
     z-index: 2;
     width: 150px;
-
 }
 
 .menudroite li {
@@ -219,7 +216,6 @@ p.abstract {
     color: #BE0A26;
 }
 
-
 #footer {
     background-color: black;
     position: absolute;
@@ -319,6 +315,7 @@ p.abstract {
     background-color: transparent;
     border: none;
     color: white;
+    text-align: left;
 }
 
 .panel {
@@ -338,7 +335,7 @@ p.abstract {
 
 .form-control {
     background-color: #64C7C4;
-    border: none;    
+    border: none;
 }
 
 .form-group,
@@ -394,7 +391,7 @@ video {
 }
 
 .form-div {
-    background-color: rgba(10, 23, 167, 0.3);    
+    background-color: rgba(10, 23, 167, 0.3);
     padding: 7px;
     border-radius: 5px;
 }
@@ -425,6 +422,12 @@ video {
 #footerSocial {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 856px) and (min-width: 768px) {
+    #footerSocial {
+        float: left !important;
+    }
 }
 
 
@@ -468,7 +471,6 @@ video {
     opacity: 1;
     text-decoration: none;
 }
-
 
 
 /* Styling Pagination*/
@@ -567,7 +569,7 @@ video {
 
 .background-bottom {
     position: absolute;
-    bottom : 50px;
+    bottom: 50px;
     width: 100%;
     z-index: -15;
 }
@@ -577,9 +579,16 @@ video {
 }
 
 .back-to-top {
+    background: url('../images/top_blue.png') no-repeat center;
+    height: 32px;
+    width: 32px;
     margin: 0;
     position: fixed;
-    bottom: 15px;
+    bottom: 70px;
     right: 15px;
     z-index: 100;
+}
+
+.full-width {
+    width: 100%;
 }
