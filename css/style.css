@@ -427,6 +427,8 @@ video {
 @media (max-width: 856px) and (min-width: 768px) {
     #footerSocial {
         float: left !important;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
