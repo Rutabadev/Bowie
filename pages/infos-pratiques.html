@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <script src="../js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -272,8 +273,10 @@
             <div class="col-md-4 col-sm-8">
                 <button class="btn-dl"><img src="../images/download.png" />TELECHARGER LE CATALOGUE</button>
                 <br>
-                <button class="btn-dl"><img src="../images/download.png" />TELECHARGER LE FLYER</button>
-                <br>
+                <form target="_blank" method="get" action="../files/LAST FLYER 100x210.pdf">
+                    <button class="btn-dl"><img src="../images/download.png" />TELECHARGER LE FLYER</button>
+                </form>
+                <!--<br>-->
                 <button class="btn-dl"><img src="../images/download.png" />TELECHARGER LES PHOTOS</button>
                 <br> </div>
             <div class="col-md-4 hidden-xs hidden-sm"><img src="../images/baseline-small.png" class="img-responsive" /></div>
@@ -286,7 +289,7 @@
                 <li><a href="exposition.html#partenaires">PARTENAIRES</a></li>
                 <li><a href="infos-pratiques.html#presse">PRESSE</a></li>
                 <li><a href="infos-pratiques.html#contact">CONTACT</a></li>
-                <li><a href="#">MENTIONS LEGALES </a></li>
+                <li><a href="mentions-legales.html">MENTIONS L&Eacute;GALES</a></li>
             </ul>
             <ul id="footerSocial" class="nav navbar-nav navbar-right hidden-lg">
                 <li>
@@ -310,7 +313,7 @@
             </ul>
         </div>
     </nav>
-    <a class="back-to-top" style="display: none;" href="#"></a>
+    <a class="back-to-top hidden-xs hidden-sm" style="display: none;" href="#"></a>
     <script src="../js/scroll.js"></script>
 </body>
 
