@@ -9,6 +9,8 @@
     <script src="../js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.bxslider.min.js"></script>
+    <link href="../css/jquery.bxslider.css" rel="stylesheet" />
     <title>Bowie</title>
     <link rel="stylesheet" href="../css/style.css"> </head>
 
@@ -208,9 +210,30 @@
             </div>
             <!-- Section Vidéos -->
             <div id="videos" class="row">
+                <div class="col-xs-12">
+                    <h2>Vidéos</h2>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xs-12" align="center">
-                    <video preload="none" poster="../images/videoPoster.png" controls>
-                        <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                    <ul class="bxslider">
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- Section Partenaires -->
@@ -312,7 +335,9 @@
                         <p>SETUP FEES</p>
                         <p class="abstract">unlimited</p>
                         <p class="abstract">AMOUNT OF EVENTS</p>
-                        <a href="infos-pratiques.html#contact"><button class="button">CONTACTER L'ORGANISATION</button></a>
+                        <a href="infos-pratiques.html#contact">
+                            <button class="button">CONTACTER L'ORGANISATION</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -355,7 +380,9 @@
                 </div>
                 <div class="row" align="center">
                     <div class="col-xs-12">
-                        <a href="infos-pratiques.html#contact"><button class="button">CONTACTER L'ORGANISATION</button></a>
+                        <a href="infos-pratiques.html#contact">
+                            <button class="button">CONTACTER L'ORGANISATION</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -420,6 +447,7 @@
     </nav>
     <a class="back-to-top hidden-xs hidden-sm" href="#"></a>
     <script src="../js/scroll.js"></script>
+    <script src="../js/carouselvideo.js"></script>
 </body>
 
 </html>
