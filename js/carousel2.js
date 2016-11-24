@@ -2,9 +2,7 @@ $(document).ready(function() {
  
   //Sort random function
   function random(owlSelector){
-    owlSelector.children().sort(function(){
-        return Math.round(Math.random()) - 0.5;
-    }).each(function(){
+    owlSelector.children().each(function(){
       $(this).appendTo(owlSelector);
     });
   }
