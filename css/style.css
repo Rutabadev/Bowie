@@ -17,6 +17,7 @@ html {
 body {
     margin-bottom: 60px;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .indexBody {
@@ -372,6 +373,23 @@ p.abstract {
 
 /* Constellation */
 
+#constellationContainerTop {
+    position: relative;
+}
+
+#constellationContainerTop > a {
+    position: absolute;
+    bottom: 20px;
+}
+
+#constellationContainerTop > a > img {
+    display: block;
+}
+
+#constellationContainerTop > a > img:first-child {
+    margin-bottom: 5px;
+}
+
 #constellationContainer {
     top: 0;
     height: 100vh;
@@ -427,6 +445,12 @@ video {
 @media (max-width: 856px) and (min-width: 768px) {
     #footerSocial {
         float: left !important;
+    }
+}
+
+@media (max-width: 856px) {
+    .owl-buttons {
+        display: none;
     }
 }
 
@@ -587,6 +611,7 @@ video {
     bottom: 70px;
     right: 15px;
     z-index: 100;
+    display: none;
 }
 
 .full-width {
