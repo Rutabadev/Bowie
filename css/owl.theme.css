@@ -46,17 +46,18 @@
 	height: 12px;
 	margin: 5px 7px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	background: #869791;
 }
 
-.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page.active span {
+   background: #64C7C4;
+}
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
+ 
+    background: #BE0A26; 
 }
 
 /* If PaginationNumbers is true */
