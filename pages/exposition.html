@@ -9,6 +9,8 @@
     <script src="../js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.bxslider.min.js"></script>
+    <link href="../css/jquery.bxslider.css" rel="stylesheet" />
     <title>Bowie</title>
     <link rel="stylesheet" href="../css/style.css"> </head>
 
@@ -208,9 +210,30 @@
             </div>
             <!-- Section Vidéos -->
             <div id="videos" class="row">
+                <div class="col-xs-12">
+                    <h2>Vidéos</h2>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xs-12" align="center">
-                    <video preload="none" poster="../images/videoPoster.png" controls>
-                        <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                    <ul class="bxslider">
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                        <li>
+                            <video preload="none" poster="../images/videoPoster.png" controls>
+                                <source src="../videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- Section Partenaires -->
@@ -220,93 +243,57 @@
             </div>
         </div>
         <div class="container-fluid partenaires">
-            <div class="row" align="center">
-                <div class="col-xs-6">
-                    <h3>Organisé par</h3>
-                    <a href="http://www.autantyk.com"><img src="../images/Autantyk-logo-quadri.png"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Organisé par</h3>
+                        <a href="http://www.autantyk.com"><img src="../images/Autantyk-logo-quadri.png"></a>
+                    </div>
                 </div>
-                <div class="col-xs-6">
-                    <h3>Un événement</h3>
-                    <a href="http://www.nostalgie.fr/"><img src="../images/nostalgie.png"></a>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Un événement</h3>
+                        <a href="http://www.nostalgie.fr/"><img src="../images/nostalgie.png"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="row" align="center">
-                <div class="col-xs-12">
-                    <h3>Partenaires officiels</h3>
-                    <a href="http://www.cite-espace.com/evenements/"><img src="../images/CiteEspace-horiz.png"></a>
-                    <a href="https://cnes.fr/fr"><img src="../images/CNES_Logo2013_P%20bleu.png"></a>
-                    <a href="http://www.tfc.info/prehome"><img src="../images/EXE%20LOGO%20TFC%20PNG.png"></a>
-                    <a href="http://www.toulouse.fr/"><img style="width: 150px;" src="../images/Logo_MT_VNoir.png"></a>
-                    <a href="http://www.toulouse-metropole.fr/"><img src="../images/TLSE%20METROPOLE%20logo%20couleur%20positif-scu.png"></a>
-                    <a href="http://www.le-multiple.com/"><img src="../images/leMultiple-01-bleu-150624.png"></a>
-                    <a href="http://www.newrest.eu/"><img src="../images/Logo-Newrest-ColorRGB.png"></a>
-                    <a href="http://www.abaques.fr/"><img src="../images/logo-abaques-carrÇ.jpg"></a>
-                    <a href="https://www.facebook.com/davidbowiefanclubtoulouse/"><img src="../images/DBFCT%202.0.png"></a>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Partenaires officiels</h3>
+                        <a href="http://www.cite-espace.com/evenements/"><img src="../images/CiteEspace-horiz.png"></a>
+                        <a href="https://cnes.fr/fr"><img src="../images/CNES_Logo2013_P%20bleu.png"></a>
+                        <a href="http://www.tfc.info/prehome"><img src="../images/EXE%20LOGO%20TFC%20PNG.png"></a>
+                        <a href="http://www.toulouse.fr/"><img src="../images/Logo_MT_VNoir.png"></a>
+                        <a href="http://www.toulouse-metropole.fr/"><img src="../images/TLSE%20METROPOLE%20logo%20couleur%20positif-scu.png"></a>
+                        <a href="http://www.le-multiple.com/"><img src="../images/leMultiple-01-bleu-150624.png"></a>
+                        <a href="https://www.facebook.com/davidbowiefanclubtoulouse/"><img src="../images/DBFCT%202.0.png"></a>
+                        <a href="http://www.newrest.eu/"><img src="../images/Logo-Newrest-ColorRGB.png"></a>
+                        <a href="http://www.abaques.fr/"><img src="../images/logo-abaques-carrÇ.jpg"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="row" align="center">
-                <div class="col-xs-6">
-                    <h3>Partenaires techniques</h3>
-                    <div class="row">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Partenaires techniques</h3>
                         <a href="https://dao-co.com/"><img src="../images/00_LogoDAO.png"></a>
                         <a href="http://www.grand-hotel-opera.com/fr/"><img src="../images/LOGO%20GHO.png"></a>
                         <a href="https://www.facebook.com/SF.DECO/"><img src="../images/Atelier%20couleur%20d%C3%A9co%2072dpi.png"></a>
-                    </div>
-                    <div class="row">
                         <a href="http://www.lamenagerie.com/"><img src="../images/logo%20LA%20MENAGERIE.png"></a>
                         <a href="http://www.ateliercom.eu/"><img src="../images/atelier-logo-noir-v2+site.png"></a>
                         <a href="https://www.lacollab.com/"><img src="../images/Logo_LA%20COLLAB_1000px.png"></a>
+                        <a href="http://oandb.eu/?utm_source=signature&utm_medium=e-mail&utm_content=signature-tony&utm_campaign=signature"><img src="../images/Logo%20O%20&%20B.png"></a>
+
                     </div>
                 </div>
-                <div class="col-xs-6">
-                    <h3>Partenaires universitaires</h3>
-                    <div class="row">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Partenaires écoles et universités</h3>
                         <a href="http://www.masteragcom.org/"><img src="../images/-AGCOM.png"></a>
                         <a href="http://cas.univ-tlse2.fr/"><img src="../images/LogoCAS.png"></a>
-                    </div>
-                    <div class="row">
                         <a href="http://www.iscpa-ecoles.com/"><img src="../images/ISCPA.png"></a>
                         <a href="http://www.ipi-ecoles.com/category/campus/toulouse/"><img src="../images/LOGO_IPI.png"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--       <div class="container-fluid partenaires">
-            <div class="row" align="center">
-                <div class="col-xs-12">
-                    <a href="http://www.toulouse-metropole.fr/"><img src="../images/TLSE%20METROPOLE%20logo%20couleur%20positif-scu.png"></a>
-                    <a href="http://www.cite-espace.com/evenements/"><img src="../images/CiteEspace-horiz.png"></a>
-                    <a href="https://cnes.fr/fr"><img src="../images/CNES_Logo2013_P%20bleu.png"></a>
-                    <a href="http://www.le-multiple.com/"><img src="../images/leMultiple-01-bleu-150624.png"></a>
-                    <a href="http://www.nostalgie.fr/"><img src="../images/nostalgie.png"></a>
-                    <a href="http://www.tfc.info/prehome"><img src="../images/EXE%20LOGO%20TFC%20PNG.png"></a>
-                    <a href="https://www.lacollab.com/"><img src="../images/Logo_LA%20COLLAB_1000px.png"></a>
-                    <a href="http://www.ateliercom.eu/"><img src="../images/atelier-logo-noir-v2+site.png"></a>
-                </div>
-            </div>
-            <div class="row" align="center">
-                <div class="col-xs-12">
-                    <a href="http://www.autantyk.com"><img src="../images/Autantyk-logo-quadri.png"></a>
-                    <a href="https://www.facebook.com/davidbowiefanclubtoulouse/"><img src="../images/DBFCT%202.0.png"></a>
-                    <a href="http://www.lamenagerie.com/"><img src="../images/logo%20LA%20MENAGERIE.png"></a>
-                    <a href="http://www.grand-hotel-opera.com/fr/"><img src="../images/LOGO%20GHO.png"></a>
-                    <a href="http://www.vincent-baldensperger.com/"><img src="../images/logo-baldensperger.png"></a>
-                    <a href="http://cas.univ-tlse2.fr/"><img src="../images/LogoCAS.png"></a>
-                    <a href="http://www.abaques.fr/"><img src="../images/logo-abaques-carrÇ.jpg"></a>
-                </div>
-            </div>
-            <div class="row" align="center">
-                <div class="col-xs-12">
-                    <a href="https://dao-co.com/"><img src="../images/00_LogoDAO.png"></a>
-                    <a href="http://oandb.eu/?utm_source=signature&utm_medium=e-mail&utm_content=signature-tony&utm_campaign=signature"><img src="../images/Logo%20O%20&%20B.png"></a>
-                    <a href="http://www.newrest.eu/"><img src="../images/Logo-Newrest-ColorRGB.png"></a>
-                    <a href="https://www.facebook.com/SF.DECO/"><img src="../images/Atelier%20couleur%20d%C3%A9co%2072dpi.png"></a>
-                    <a href="http://www.masteragcom.org/"><img src="../images/-AGCOM.png"></a>
-                    <a href="http://www.iscpa-ecoles.com/"><img src="../images/ISCPA.png"></a>
-                    <a href="http://www.ipi-ecoles.com/category/campus/toulouse/"><img src="../images/LOGO_IPI.png"></a>
-                </div>
-            </div>
-        </div>-->
         <div class="container">
             <!-- Section Privatisation -->
             <div id="privatisation" class="row">
@@ -327,14 +314,12 @@
                         <h2>€ 35</h2>
                         <p>€ 900 yearly</p>
                         <p>SETUP FEES</p>
-                        <button class="button">CONTACTER L'ORGANISATION</button>
                     </div>
                     <div class="col-md-3 centered-row">
-                        <h1>Buisness</h1>
+                        <h1>Business</h1>
                         <h2>€ 75 /MO</h2>
                         <p>€ 1500 yearly</p>
                         <p>SETUP FEES</p>
-                        <button class="button">CONTACTER L'ORGANISATION</button>
                     </div>
                     <div class="col-md-3 centered-row">
                         <h1>Partner</h1>
@@ -343,7 +328,6 @@
                         <p>SETUP FEES</p>
                         <p class="abstract">unlimited</p>
                         <p class="abstract">AMOUNT OF EVENTS</p>
-                        <button class="button">CONTACTER L'ORGANISATION</button>
                     </div>
                     <div class="col-md-3 centered-row">
                         <h1>Innovate</h1>
@@ -352,7 +336,9 @@
                         <p>SETUP FEES</p>
                         <p class="abstract">unlimited</p>
                         <p class="abstract">AMOUNT OF EVENTS</p>
-                        <button class="button">CONTACTER L'ORGANISATION</button>
+                        <a href="infos-pratiques.html#contact">
+                            <button class="button">CONTACTER L'ORGANISATION</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -394,17 +380,10 @@
                     </div>
                 </div>
                 <div class="row" align="center">
-                    <div class="col-sm-3">
-                        <button class="button">CONTACTER L'ORGANISATION</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="button">CONTACTER L'ORGANISATION</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="button">CONTACTER L'ORGANISATION</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="button">CONTACTER L'ORGANISATION</button>
+                    <div class="col-xs-12">
+                        <a href="infos-pratiques.html#contact">
+                            <button class="button">CONTACTER L'ORGANISATION</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -469,6 +448,7 @@
     </nav>
     <a class="back-to-top hidden-xs hidden-sm" href="#"></a>
     <script src="../js/scroll.js"></script>
+    <script src="../js/carouselvideo.js"></script>
 </body>
 
 </html>

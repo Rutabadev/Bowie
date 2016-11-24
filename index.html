@@ -21,9 +21,11 @@
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="js/konva.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
     <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <title>Life On Mars</title>
     <link rel="stylesheet" href="css/style.css"> </head>
 
@@ -153,8 +155,24 @@
         <br>
         <div class="row">
             <div class="col-xs-12" align="center">
-                <video preload="none" poster="images/videoPoster.png" controls>
-                    <source src="videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                <ul class="bxslider">
+                    <li>
+                        <video preload="none" poster="images/videoPoster.png" controls>
+                            <source src="videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                    </li>
+                    <li>
+                        <video preload="none" poster="images/videoPoster.png" controls>
+                            <source src="videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                    </li>
+                    <li>
+                        <video preload="none" poster="images/videoPoster.png" controls>
+                            <source src="videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                    </li>
+                    <li>
+                        <video preload="none" poster="images/videoPoster.png" controls>
+                            <source src="videos/lifonmars_v2.mp4" type="video/mp4"> </video>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="row">
@@ -231,6 +249,7 @@
     <script src="js/constellation.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/carouselvideo.js"></script>
 </body>
 
 </html>
