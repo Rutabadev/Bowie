@@ -83,6 +83,13 @@ a:visited {
     width: 150px;
 }
 
+@media (max-width: 1464px) {
+    .menugauche {
+        display: none !important;
+    }
+}
+
+
 .menudroite li {
     list-style: none;
     background-image: none;
